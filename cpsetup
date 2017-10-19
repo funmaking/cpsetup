@@ -379,14 +379,6 @@ function installWatchMySQL(){
 	sh latest-watchmysql
 }
 
-function installCleanBackups(){
-
-	cd /usr/src
-	wget http://download.ndchost.com/cleanbackups/latest-cleanbackups
-	sh latest-cleanbackups
-
-}
-
 function installMySQLTuner(){
 
 	cd /usr/bin
