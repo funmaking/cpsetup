@@ -3,21 +3,21 @@ cpSetup
 
 <strong>Author:</strong> Myles McNamara<br/><strong>Version:</strong> 1.4.0<br/><strong>Last Update:</strong> February 1, 2017
 
-<strong>cpsetup</strong> is a custom bash/shell script to setup and harden/configure cPanel CentOS/RHEL server with a wide range of applications, plugins, and modules. This script will also install cPanel if it's not already installed.
+<strong>cpsetup</strong> es un script bash/shell personalizado para configurar y securizar un servidor CentOS/RHEL con cPanel y una amplia gama de aplicaciones, complementos y módulos. Este script también instalará cPanel si no está aún instalado.
 
-Each installation and configuration/hardening is organized into functions. By default running the script without any arguments will prompt for each install/configuration as well as prompt for any required configs (email, api key, etc).
+Cada instalación y configuración/securización está organizada en funciones. De manera predeterminada, si ejecutas el script sin argumentos, el sistema te pedirá permiso para ejecutar cada instalación/configuración, así como te solicitará cualquier configuración requerida (correo electrónico, clave API, etc.).
 
-You can also run any of the available functions individually ... to see a list of functions available, execute this command:
+También puedes ejecutar cualquiera de las funciones disponibles individualmente ... para ver una lista de funciones disponibles, ejecuta este comando:
 
 ```bash
 ./cpsetup --functions
 ```
 
-Usage
+Uso
 =====
 
 ```bash
-wget https://github.com/tripflex/cpsetup/raw/master/cpsetup
+wget https://github.com/funmaking/cpsetup/raw/master/cpsetup
 chmod +x cpsetup
 ./cpsetup
 ```
@@ -25,7 +25,7 @@ chmod +x cpsetup
 <table border="0">
 <tr>
 <td width="60%">
-<h4>Features Include:</h4>
+<h4>Características incluidas:</h4>
 <ul>
     <li>Install ClamAV from Source</li>
     <li>Install <a href="https://documentation.cpanel.net/display/CKB/The+Let's+Encrypt+Plugin" target="_blank">Let's Encrypt for cPanel AutoSSL</a></li>
@@ -87,8 +87,8 @@ Depreciated Functions/Installs (*)
 > they don't even date the versions, which IMO is sloppy dev work, and as such, they do not belong in the auto install process.
 
 
-Available Arguments
--------------------
+Argumentos Disponibles
+----------------------
 
 ```
 cpsetup - sMyles cPanel Setup Script
@@ -104,8 +104,8 @@ Options:
 -R or --functions: Show available functions to use with -r or --run command.
 ```
 
-Firewall Updates
-----------------
+Actualizaciones del Firewall
+----------------------------
 
 | Option            | Original Value | New Value |
 |-------------------|----------------|-----------|
@@ -115,8 +115,8 @@ Firewall Updates
 | `SYSLOG_CHECK`    | 0              | 1800      |
 | `PT_ALL_USERS`    | 0              | 1         |
 
-SSH Updates
------------
+Actualizaciones SSH
+------------------
 
 Any options that have `(prompt)` means you will be prompted to specify your own custom value if `-u` was not used as an argument.
 
@@ -125,8 +125,8 @@ Any options that have `(prompt)` means you will be prompted to specify your own 
 | `Port`   | 22             | 222 (prompt) |
 | `UseDNS` | yes            | no           |
 
-cPanel Config Updates
----------------------
+Actualizaciones cPanel Config
+------------------------------
 
 | Option                     | Original Value | New Value               |
 |----------------------------|----------------|-------------------------|
@@ -134,8 +134,8 @@ cPanel Config Updates
 | Compiler Access            | Enabled        | Disabled                |
 | Root Forwarder Email       | None           | User Specified (prompt) |
 
-Pure FTP Updates
-----------------
+Actualizaciones  Pure FTP
+-------------------------
 
 | Option                | Original Value | New Value | Result                   |
 |-----------------------|----------------|-----------|--------------------------|
@@ -156,15 +156,15 @@ cPanel Tweak Settings Updates
 | Restrict outgoing SMTP to root, exim, and mailman | Enabled | Disabled |
 | Proxy Subdomains (whm.example.com, etc)| Enabled | Disabled |
 
-MySQL Settings Updates
-----------------------
+Actualizaciones  Preferencias MySQL
+-----------------------------------
 
 | Option       | Original Value | New Value |
 |--------------|----------------|-----------|
 | local-infile | 1              | 0         |
 
-PHP Configuration Updates
--------------------------
+Actualizaciones  Configuraciones PHP
+------------------------------------
 
 | Option            | Original Value | New Value                                                                                            |
 |-------------------|----------------|------------------------------------------------------------------------------------------------------|
