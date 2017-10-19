@@ -29,7 +29,6 @@ chmod +x cpsetup
 <ul>
     <li>Install ClamAV from Source</li>
     <li>Install <a href="https://documentation.cpanel.net/display/CKB/The+Let's+Encrypt+Plugin" target="_blank">Let's Encrypt for cPanel AutoSSL</a></li>
-    <li>Install <a href="http://www.afterlogic.org/docs/webmail-lite/installation/install-on-cpanel" target="_blank">AfterLogic WebMail Lite</a></li>
     <li>Install <a href="http://configserver.com/cp/cse.html" target="_blank">ConfigServer Explorer</a></li>
     <li>Install <a href="http://configserver.com/cp/cmm.html" target="_blank">ConfigServer MailManage</a></li>
     <li>Install <a href="http://configserver.com/cp/cmq.html" target="_blank">ConfigServer MailQueues</a></li>
@@ -56,12 +55,7 @@ chmod +x cpsetup
     <li>Update PHP Settings</li>
     <li>Update Apache Global Configuration</li>
 </ul>
-<h4>Depreciated (but still available) Features/Functions:</h4>
-<ul>
-    <li>Install <a href="https://www.ndchost.com/cpanel-whm/addons/accountdnscheck/" target="_blank">Account DNS Check</a>* (depreciated)</li>
-    <li>Install <a href="http://how2.be/en/community/phpinimgr/" target="_blank">PHP.ini Manager</a>* (depreciated)</li>
-    <li>Install <a href="https://www.ndchost.com/cpanel-whm/addons/cleanbackups/" target="_blank">Clean Backups</a>* (depreciated)</li>
-</ul>
+
 <h4>Future Enhancements:</h4>
 <ul>
 <li>You tell me, open up an issue and suggest a new feature!</li>
@@ -72,19 +66,6 @@ chmod +x cpsetup
 </td>
 </tr>
 </table>
-
-Depreciated Functions/Installs (*)
-----------------
-
-| Name | Reason |
-|---|---|
-| Account DNS Check | Reported to no longer work on CentOS 7, or WHM > 11.52 |
-| PHP.INI Manager   | WHM now has built in handling, and unsure of status of plugin |
-| Clean Backups     | No longer works or updated? |
-
-> I decided to remove these from the auto install process because I either do not know the status of them (compatibility wise) with WHM,
-> they are not compatible with latest release, or because the developers either do not provide ANY changelog, or even if they do,
-> they don't even date the versions, which IMO is sloppy dev work, and as such, they do not belong in the auto install process.
 
 
 Argumentos Disponibles
