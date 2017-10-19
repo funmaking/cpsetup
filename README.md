@@ -1,7 +1,7 @@
 cpSetup
 =======
 
-<strong>Author:</strong> Myles McNamara<br/><strong>Version:</strong> 1.4.0<br/><strong>Last Update:</strong> February 1, 2017
+<strong>Autor:</strong> Myles McNamara<br/><strong>Forked:</strong> Javier Galeote<br/><strong>Version:</strong> 1.4.0<br/><strong>Last Update:</strong> February 1, 2017
 
 <strong>cpsetup</strong> es un script bash/shell personalizado para configurar y securizar un servidor CentOS/RHEL con cPanel y una amplia gama de aplicaciones, complementos y módulos. Este script también instalará cPanel si no está aún instalado.
 
