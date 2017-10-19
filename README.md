@@ -202,7 +202,6 @@ Usalo bajo tu propio riesgo, si no sabes lo que estás haciendo probablemente no
 
 **Implemented enhancements:**
 
-- Added AfterLogic WebMail Lite installer
 - Added Let's Encrypt AutoSSL for cPanel installer
 - Added import for CloudFlare new public key
 - Added Disable Proxy Subdomains (whm.example.com, etc) to harden config call
