@@ -104,8 +104,8 @@ Options:
 -R or --functions: Show available functions to use with -r or --run command.
 ```
 
-Actualizaciones del Firewall
-----------------------------
+Cambios en el Firewall
+----------------------
 
 | Option            | Original Value | New Value |
 |-------------------|----------------|-----------|
@@ -115,8 +115,9 @@ Actualizaciones del Firewall
 | `SYSLOG_CHECK`    | 0              | 1800      |
 | `PT_ALL_USERS`    | 0              | 1         |
 
-Actualizaciones SSH
-------------------
+
+Cambios en  SSH
+---------------
 
 Any options that have `(prompt)` means you will be prompted to specify your own custom value if `-u` was not used as an argument.
 
@@ -125,8 +126,9 @@ Any options that have `(prompt)` means you will be prompted to specify your own 
 | `Port`   | 22             | 222 (prompt) |
 | `UseDNS` | yes            | no           |
 
-Actualizaciones cPanel Config
-------------------------------
+
+Cambios en la Configuración de cPanel
+-------------------------------------
 
 | Option                     | Original Value | New Value               |
 |----------------------------|----------------|-------------------------|
@@ -134,8 +136,9 @@ Actualizaciones cPanel Config
 | Compiler Access            | Enabled        | Disabled                |
 | Root Forwarder Email       | None           | User Specified (prompt) |
 
-Actualizaciones  Pure FTP
--------------------------
+
+Cambios en Pure FTP
+--------------------
 
 | Option                | Original Value | New Value | Result                   |
 |-----------------------|----------------|-----------|--------------------------|
@@ -143,8 +146,9 @@ Actualizaciones  Pure FTP
 | `AnonymousCantUpload` | no             | yes       | Anonymous can't upload   |
 | `NoAnonymous`         | no             | yes       | Anonymous can't login    |
 
-cPanel Tweak Settings Updates
------------------------------
+
+Cambios en cPanel Tweak Settings
+---------------------------------
 
 | Option                               | Original Value | New Value |
 |--------------------------------------|----------------|-----------|
@@ -156,23 +160,26 @@ cPanel Tweak Settings Updates
 | Restrict outgoing SMTP to root, exim, and mailman | Enabled | Disabled |
 | Proxy Subdomains (whm.example.com, etc)| Enabled | Disabled |
 
-Actualizaciones  Preferencias MySQL
------------------------------------
+
+Cambios en MySQL
+----------------
 
 | Option       | Original Value | New Value |
 |--------------|----------------|-----------|
 | local-infile | 1              | 0         |
 
-Actualizaciones  Configuraciones PHP
-------------------------------------
+
+Cambios en Configuraciones de PHP
+---------------------------------
 
 | Option            | Original Value | New Value                                                                                            |
 |-------------------|----------------|------------------------------------------------------------------------------------------------------|
 | enable_dl         | On             | Off                                                                                                  |
 | disable_functions | None           | show_source, system, shell_exec, passthru, exec, phpinfo, popen, proc_open, allow_url_fopen, ini_set |
 
-Apache Global Configuration Updates
------------------------------------
+
+Cambios en la Configuración global de Apache
+--------------------------------------------
 
 | Option           | Original Value | New Value   |
 |------------------|----------------|-------------|
@@ -180,7 +187,8 @@ Apache Global Configuration Updates
 | Server Tokens    | All            | ProductOnly |
 | Trace Enable     | On             | Off         |
 
-CloudFlare RailGun Configuration
+
+Configuración CloudFlare RailGun
 --------------------------------
 
 | Option                  | Original Value             | New Value                         |
@@ -189,8 +197,9 @@ CloudFlare RailGun Configuration
 | activation.railgun_host | YOUR_PUBLIC_IP_OR_HOSTNAME | (user defined)                    |
 | activation.token        | YOUR_TOKEN_HERE            | (user defined)                    |
 
-CloudFlare RailGun MemCached Configurations
--------------------------------------------
+
+Cambios en CloudFlare RailGun MemCached
+----------------------------------------
 
 | Option    | Original Value | New Value                            |
 |-----------|----------------|--------------------------------------|
@@ -200,9 +209,10 @@ CloudFlare RailGun MemCached Configurations
 | CACHESIZE | 64             | 4096                                 |
 | OPTIONS   |                | -s /var/run/memcached/memcached.sock |
 
-### Caution
 
-Use at your own risk, if you don't know what you're doing you should probably not be using this script. Myself and any contributors to this project take absolutely no responsibility for anything you do with this script. I **strongly** recommend reading the script so you understand what it does before using.
+### Precaución
+
+Usalo bajo tu propio riesgo, si no sabes lo que estás haciendo probablemente no deberías usar este script. Yo mismo y cualquier contribuyente a este proyecto no asumimos absolutamente ninguna responsabilidad por lo que hagas con este script. Yo **recomiendo** leer el guión para que entiendas lo que hace antes de usarlo.
 
 # Change Log
 
