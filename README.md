@@ -85,16 +85,35 @@ Options:
 -R or --functions: Show available functions to use with -r or --run command.
 ```
 
-Cambios en el Firewall
+Cambios en el Firewall 
 ----------------------
 
-| Option            | Original Value | New Value |
-|-------------------|----------------|-----------|
-| `RESTRICT_SYSLOG` | 0              | 3         |
-| `SMTP_BLOCK`      | 0              | 1         |
-| `LF_SCRIPT_ALERT` | 0              | 1         |
-| `SYSLOG_CHECK`    | 0              | 1800      |
-| `PT_ALL_USERS`    | 0              | 1         |
+| Option                   | Original Value | New Value |
+|--------------------------|----------------|-----------|
+| `RESTRICT_SYSLOG`        | 0              | 3         |
+| `SMTP_BLOCK`             | 0              | 1         |
+| `LF_SCRIPT_ALERT`        | 0              | 1         |
+| `SYSLOG_CHECK`           | 0              | 1800      |
+| `LF_SCRIPT_ALERT`        | 0              | 1         |
+| `DYNDNS`                 | 0              | 600       |
+| `DYNDNS_IGNORE`          | 0              | 1         |
+| `PT_USERTIME`            | 1800           | 0         |
+| `PT_USERMEM`             | 512            | 0         |
+| `LF_POP3D`               | 10             | 20        |
+| `LF_IMAPD`               | 10             | 20        |
+| `LF_CPANEL`              | 5              | 10        |
+| `LT_POP3D`               | 0              | 180       |
+| `LF_DIRWATCH_DISABLE`    | 0              | 1         |
+| `CT_PERMANENT`           | 0              | 1         |
+| `CT_INTERVAL`            | 30             | 60        |
+| `CT_SKIP_TIME_WAIT`      | 0              | 1         |
+| `PS_EMAIL_ALERT`         | 1              | 0         |
+| `LF_PERMBLOCK_ALERT`     | 1              | 0         |
+| `PS_PERMANENT`           | 0              | 1         |
+| `LF_EMAIL_ALERT`         | 1              | 0         |
+
+
+Los valores "PT_USERMEM" y "PT_USERMEM" son ilimitados. Limitarlos con Cloudlinux, por ejemplo.
 
 
 Cambios en  SSH
