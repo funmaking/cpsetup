@@ -113,7 +113,7 @@ Cambios en el Firewall
 | `LF_EMAIL_ALERT`         | 1              | 0         |
 
 
-Los valores "PT_USERMEM" y "PT_USERMEM" son ilimitados. Limitarlos con Cloudlinux, por ejemplo.
+Los valores "PT_USERMEM" y "PT_USERTIME" son ilimitados. Limitarlos con Cloudlinux, por ejemplo.
 
 
 Cambios en  SSH
